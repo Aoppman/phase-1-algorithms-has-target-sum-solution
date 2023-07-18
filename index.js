@@ -6,11 +6,12 @@ function hasTargetSum(array, target) {
   
     const complement = target - array[i]
     // iterate through the redt of the array
-    for (let j = i + 1; j < array.length; j++)
+    for (let j = i + 1; j < array.length; j++) {
     // check if any number is our complement
     //  if so, return true
     if (array[j] === complement) return true;
   }
+}
   return false
 };
 
